@@ -14,7 +14,7 @@
 [node-image]: https://img.shields.io/badge/node.js-%3E=8-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 
-eslint config for Ant international FE team
+Eslint config for Ant international FE team
 
 ## Installment
 
