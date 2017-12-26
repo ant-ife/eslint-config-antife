@@ -1,0 +1,7 @@
+.travis.yml
+test/
+.eslintrc
+.eslintignore
+coverage/
+*.sw*
+*.un~
