@@ -1,14 +1,13 @@
 {
   "name": "eslint-config-antife",
   "version": "1.0.0",
-  "description": "eslint config for Ant international FE team",
+  "description": "Eslint config for Ant international FE team",
   "keywords": [
     "eslint"
   ],
   "main": "index.js",
   "files": [
-    "index.js",
-    ".eslintrc"
+    "index.js"
   ],
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   "devDependencies": {
     "eslint": "^4.13.1",
     "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
     "pre-commit": "^1.2.2"
   },
   "scripts": {
