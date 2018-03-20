@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-antife",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint config for Ant international FE team",
   "keywords": [
     "eslint"
