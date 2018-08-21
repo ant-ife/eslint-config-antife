@@ -152,7 +152,7 @@ module.exports = {
     'yield-star-spacing': [2, 'both'],
     yoda: [2, 'never'],
     'max-len': [1, {
-      code: 80,
+      code: 120,
       ignoreUrls: true,
       ignoreComments: true,
       ignoreTemplateLiterals: true,
