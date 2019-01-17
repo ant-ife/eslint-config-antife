@@ -16,26 +16,46 @@
 
 Eslint config for Ant international FE team
 
-## Installment
+## Usage
+
+### For general project
 
 ```bash
+$ npm i eslint --save-dev
 $ npm i eslint-config-antife --save-dev
 ```
-
-## Usage
 
 Add `.eslintrc.js` in your root directory.
 
 ```javascript
 module.exports = {
   extends: 'eslint-config-antife',
-
-  plugins: [
-    'babel',
-    'html',
-  ],
 }
 ```
+
+### For Vue.js project
+
+```bash
+$ npm i eslint --save-dev
+$ npm i eslint-config-antife --save-dev
+$ npm i eslint-plugin-vue --save-dev
+```
+
+Add `.eslintrc.js` in your root directory.
+
+```javascript
+module.exports = {
+  extends: [
+    'eslint-config-antife',
+    'plugin:vue/recommended',
+  ],
+  rules: {
+    // "vue/attributes-order": 0,
+  }
+};
+```
+
+vue rules, please refer to https://eslint.vuejs.org/rules/
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-antife",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Eslint config for Ant international FE team",
   "keywords": [
     "eslint"
@@ -14,20 +14,16 @@
     "url": "https://github.com/ant-ife/eslint-config-antife"
   },
   "dependencies": {
-    "babel-eslint": "^8.0.3",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-html": "^4.0.1"
+    "babel-eslint": "^10.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.13.1",
-    "istanbul": "^0.4.5",
-    "mocha": "^4.0.1",
-    "pre-commit": "^1.2.2"
+    "ava": "^1.1.0",
+    "eslint": "^5.12.0"
   },
   "scripts": {
-    "test": "istanbul cover `npm bin`/_mocha",
+    "test": "npm run lint && ava test",
     "lint": "eslint --fix .",
-    "ci": "npm run lint && npm run test"
+    "ci": "npm run test"
   },
   "pre-commit": [
     "lint"
