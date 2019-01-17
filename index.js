@@ -2,11 +2,9 @@
 
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   parserOptions: {
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
+    parser: 'babel-eslint',
+    ecmaVersion: 10,
     sourceType: 'module',
   },
 
@@ -15,18 +13,7 @@ module.exports = {
     commonjs: true,
     es6: true,
     mocha: true,
-  },
-
-  // required to lint *.vue files
-  plugins: [
-    'babel',
-    'html',
-  ],
-
-  globals: {
-    __dirname: true,
-    process: true,
-    assert: true,
+    node: true,
   },
 
   rules: {
