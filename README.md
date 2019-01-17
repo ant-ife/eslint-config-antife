@@ -18,6 +18,8 @@ Eslint config for Ant international FE team
 
 ## Usage
 
+require `eslint@5`
+
 ### For general project
 
 ```bash
