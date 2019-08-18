@@ -31,7 +31,7 @@ Add `.eslintrc.js` in your root directory.
 
 ```javascript
 module.exports = {
-  extends: 'eslint-config-antife',
+  extends: 'antife',
 }
 ```
 
@@ -48,7 +48,7 @@ Add `.eslintrc.js` in your root directory.
 ```javascript
 module.exports = {
   extends: [
-    'eslint-config-antife',
+    'antife',
     'plugin:vue/recommended',
   ],
   rules: {
