@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-antife",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Eslint config for Ant international FE team",
   "keywords": [
     "eslint"
@@ -13,20 +13,31 @@
     "type": "git",
     "url": "https://github.com/ant-ife/eslint-config-antife"
   },
+  "peerDependencies": {
+    "eslint-plugin-intl-mobile": "^0.1.2"
+  },
   "dependencies": {
-    "babel-eslint": "^10.0.1"
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-intl-mobile": "^0.1.2"
   },
   "devDependencies": {
-    "ava": "^1.1.0",
-    "eslint": "^5.12.0"
+    "@ava/babel": "^1.0.1",
+    "ava": "^3.7.1",
+    "eslint": "^6.8.0"
   },
   "scripts": {
-    "test": "npm run lint && ava test",
+    "test": "npm run lint && ava",
     "lint": "eslint --fix .",
     "ci": "npm run test"
   },
   "pre-commit": [
     "lint"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "babel": true
+  }
 }
