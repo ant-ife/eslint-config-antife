@@ -21,7 +21,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'prefer-const': 2,
     'no-var': 2,
-    'quote-props': [ 'error', 'as-needed', { keywords: false }],
+    'quote-props': ['error', 'as-needed', { keywords: false }],
     'accessor-pairs': 2,
     'arrow-spacing': [2, { before: true, after: true }],
     'block-spacing': [2, 'always'],
@@ -124,7 +124,7 @@ module.exports = {
     }],
     'padded-blocks': [2, 'never'],
     quotes: [2, 'single', 'avoid-escape'],
-    semi: [2, 'never'],
+    semi: [2, 'always'],
     'semi-spacing': [2, { before: false, after: true }],
     'space-before-blocks': [2, 'always'],
     'space-before-function-paren': [2, 'always'],
@@ -154,4 +154,8 @@ module.exports = {
       functions: 'ignore',
     }],
   },
+
+  extends: ['plugin:eslint-plugin-intl-mobile/all'],
+
+  plugins: ['eslint-plugin-intl-mobile'],
 }
