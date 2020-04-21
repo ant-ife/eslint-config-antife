@@ -18,13 +18,13 @@ Eslint config for Ant international FE team
 
 ## Usage
 
-require `eslint@5`
+require `eslint@6`
 
 ### For general project
 
 ```bash
 $ npm i eslint --save-dev
-$ npm i eslint-config-antife --save-dev
+$ npm i eslint-config-antife eslint-plugin-intl-mobile --save-dev
 ```
 
 Add `.eslintrc.js` in your root directory.
@@ -39,7 +39,7 @@ module.exports = {
 
 ```bash
 $ npm i eslint --save-dev
-$ npm i eslint-config-antife --save-dev
+$ npm i eslint-config-antife eslint-plugin-intl-mobile --save-dev
 $ npm i eslint-plugin-vue --save-dev
 ```
 
